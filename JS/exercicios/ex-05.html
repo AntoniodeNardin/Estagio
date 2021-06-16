@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #caixa{ 
+                font: normal 20px Arial;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                background-color: blue;
+                text-align: center;
+               
+            }
+            body,html,p{
+                margin: 0px;
+                padding: 0px;
+            }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <p>Passe o mouse</p>
+    </div>
+    <script>
+        var caixa = window.document.getElementById('caixa')
+        caixa.addEventListener('click',clicar)
+        caixa.addEventListener('mouseenter',entrar)
+        caixa.addEventListener('mouseout',sair) 
+        caixa.addEventListener('mousemove',mover)
+        caixa.addEventListener('mousedown',segurar)
+
+        function clicar() {
+            caixa.innerText = 'clicou'
+            caixa.style.backgroundColor = 'red'
+        }
+        function entrar() {
+            caixa.innerText = 'entrou'
+            caixa.style.backgroundColor = 'yellow'
+        }
+       
+        function sair() {
+            caixa.innerText = 'saiu'
+            caixa.style.backgroundColor = 'brown'
+        }
+      function segurar() {
+            caixa.innerText = 'clicando'
+            caixa.style.backgroundColor = 'violet'
+        }
+    </script>
+</body>
+</html>

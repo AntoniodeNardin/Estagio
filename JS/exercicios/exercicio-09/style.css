@@ -1,0 +1,30 @@
+body{
+    background-color: rgba(0, 162, 255, 0.452);
+    text-align: center;
+    font-family: Arial;
+}
+h1{
+    color: #fff;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+}
+h3{
+    font-style: italic;
+    color:#fff
+}
+section{
+    border-radius: 10px;
+    background-color:#fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356)
+}
+img{
+ border-radius:50% ;
+ width: 250px;
+ height: 250px;
+ margin-top: 20px;
+ margin-bottom: 50px;
+}

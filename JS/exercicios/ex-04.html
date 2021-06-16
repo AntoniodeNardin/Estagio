@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>site teste</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In corporis culpa beatae eius eligendi quaerat qui voluptates officia repellat odit.</p>
+    <script>
+        var corpo = window.document.body
+        var paragrafos = window.document.getElementsByTagName('p')[0]
+        paragrafos.style.color = 'yellow'
+        corpo.style.background = 'blue'
+        document.write(paragrafos.innerHTML)
+        paragrafos.innerText = 'teste'
+    </script>
+</body>
+</html>
