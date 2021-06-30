@@ -15,7 +15,7 @@
 body,html{
     font-family: var(--font0);
     color: var(--cor0);
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     margin: 0px;
     padding: 0px;
 }
@@ -25,10 +25,13 @@ h1{
 }
 header{
     text-align: center;
-    background-image: linear-gradient(to bottom,var(--cor1),var(--cor4));
+    background-image: linear-gradient(to bottom,var(--cor1),var(--cor3));
     width: 100%;
-    height:250px;
+    min-height:250px;
+    max-height: 350px;
     font-family: var(--font0);
+    max-width: 100%;
+    min-width: 320px;
 }
 #titulo{
     font-weight: bold;
@@ -47,11 +50,16 @@ header{
 }
 #menu{
     list-style: none;
-    display: flex;
+    display: inline-block;
+    text-align: center;
+    margin:  0 auto;
 }
-li{
+#menu li{
     padding:10px 10px 10px 10px;
     font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
 }
 .list:hover{
     background-color: var(--cor2);
@@ -68,26 +76,20 @@ a{
         background-color: var(--cor1);
     }
 main{
-    width: 80%;
+    max-width: 700px;
     background-color: var(--cor0);
     margin:0 auto;
     color:black;
     padding:10px 20px;
+    min-width: 300px;
+    box-shadow: 1px 7px 8px 10px rgb(0 0 0 / 25%);
 }
 h3{
     background-image: linear-gradient(to right,var(--cor3),#fff);
     font-family: var(--font2);
 }
 img{
-}
-#bots{
     width: 100%;
-}
-#irina{
-    width: 100%;
-}
-#video{
-
 }
 #titulo-listas{
     background-color:var(--cor3);
@@ -95,12 +97,37 @@ img{
     padding: 10px;
 }
 section{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
      border-radius: 6px 6px 10px 10px;
 }
 section p{
     padding: 10px;
 }
-.listas{
-    columns: 2;
+#listas{
+    max-width: 750px;
+    margin: 0 auto;
+    min-width: 300px;
+}
+aside{
+    max-width: 750px;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+#video{
+    max-width: 720px;
+    min-width: 320px;
+}
+@media only screen and (max-width: 600px) {
+    header{
+        font-size: 12px;
+    }
+    .list{
+        font-size: 5px;
+        margin: 0;
+    }
+    #menu li{
+        font-size: 18px;
+        text-align: center;
+    }
 }
