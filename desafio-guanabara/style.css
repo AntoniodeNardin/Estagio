@@ -28,10 +28,10 @@ header{
     background-image: linear-gradient(to bottom,var(--cor1),var(--cor3));
     width: 100%;
     min-height:250px;
-    max-height: 350px;
     font-family: var(--font0);
     max-width: 100%;
     min-width: 320px;
+    box-shadow: 0px 1px 2px 6px rgba(0, 0, 0, 0.37);
 }
 #titulo{
     font-weight: bold;
@@ -44,13 +44,16 @@ header{
 #subtitulo{
     padding-top: 10px;
     padding-bottom: 30px;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
 }
 .android{
     font-family: 'android';
 }
 #menu{
     list-style: none;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin:  0 auto;
 }
@@ -114,9 +117,15 @@ aside{
     min-width: 300px;
 }
 
-#video{
-    max-width: 720px;
-    min-width: 320px;
+div#video > iframe{
+    max-width: 100%;
+    min-width: 300px;
+}
+#droids{
+    max-width: 50%;
+    min-width:40%;
+    display: block;
+    margin: auto;
 }
 @media only screen and (max-width: 600px) {
     header{

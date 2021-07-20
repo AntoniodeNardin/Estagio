@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+        .perna-r{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: perna-r 2s forwards;
+        border-radius: 4px;
+        margin: 0px 36px;
+    }
+    .barra-h-l{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: top 2s forwards;
+        
+    }
+    .barra-h-r{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: bot 2s forwards;
+        border-radius: 4px;
+    }
+
+        @keyframes perna-r {
+        0%{
+            transform: translatex(100px) rotate(0.42turn) ;
+        }
+        100%{
+            transform: translatex(0px) rotate(0.42turn);
+        }
+    }
+        @keyframes top {
+            0%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes bot  {
+            0%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+</style>
+<body>
+    <div id="N">
+        <div class="barra-h-l"></div>
+        <div class="perna-r"></div>
+        <div class="barra-h-r"></div>
+        
+    </div>
+</body>
+</html>

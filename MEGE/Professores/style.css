@@ -1,0 +1,85 @@
+:root{
+    --nome: black;
+    --texto: gray;
+    --link: blue;
+    --body:#f1f1f1;
+    --card: #f1f1f1;
+    --link-hover:blue;
+    --card-hover:rgba(0, 0, 0, 0.308)
+}
+.dark-mode:root{
+    --nome:rgb(255, 255, 255);
+    --texto:rgba(255, 255, 255, 0.561);
+    --link:#e26736;
+    --body:#212529;
+    --card: rgba(128, 128, 128, 0.233);
+    --link-hover: #3cc368;
+    --card-hover:rgba(255, 255, 255, 0.555);
+}
+body{
+    background-color: var(--body);
+    font-family:'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+header{
+    text-align: center;
+    color: var(--nome);
+}
+.card{
+    width: 300px;
+    border: 0.1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 6px;
+    margin: 60px 20px;
+    animation: slide 2s forwards;
+    background-color: var(--card);
+}
+.card:hover{
+    box-shadow: 0px 0px 4px 2px var(--card-hover);
+}
+.card-content img{
+    width: 190px;
+    height: 180px;
+    border-radius: 16px;
+    margin-top: -90px;
+}
+.card-content{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 7px;
+}
+.card-content h2{
+    color: var(--nome);
+}
+.card-content h3{
+    color: var(--texto);
+}
+.card-content a{
+    color: var(--link);
+    text-decoration: none;
+}
+.card-content i {
+    margin-left: 10px;
+}
+.card-content a:hover{
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    flex-wrap: wrap;
+}
+#switch{
+    background-color: #212529;
+}
+@keyframes slide {
+    from{
+transform: translatey(500px);
+    }
+    to{
+        transform: translatey(0px);
+
+    }
+    
+}

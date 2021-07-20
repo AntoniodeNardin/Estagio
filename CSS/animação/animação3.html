@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .box{
+        width: 200px;
+        height: 150px;
+        background-color:#057fd1;
+        margin: 80px 90px;
+        border-radius: 10px;
+        animation: crescer 1s  forwards, cor 2s forwards;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box-l{
+        animation: aparecer-l .2 s ease-in-out, crescer .5s  forwards, cor .5s forwards;
+    }
+    .box-r{
+        animation: aparecer-r 2s ease-in-out;
+    }
+    .box-t{
+        animation: aparecer-t 2s ease-in-out;
+    }
+    .box-b{
+        animation: aparecer-b 2s ease-in-out;
+    }
+        @keyframes crescer {
+           0%{transform:scale(0.5) translateY(-500px);
+           }
+           100%{transform:scale(1.5)  translateX(0px);
+           }
+        }
+        @keyframes cor {
+            100%{
+                background-color: rgb(243, 131, 3);
+            }
+            
+        }
+        @keyframes aparecer-l{
+        0%{
+            transform: translateX(-450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes aparecer-r{
+        0%{
+            transform: translateX(450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+    @keyframes aparecer-t{
+        0%{
+            transform: translateY(-450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+    @keyframes aparecer-b{
+        0%{
+            transform: translateY(450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+</style>
+<body>
+    <div class="box box-l"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

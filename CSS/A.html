@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        transform: scale(0.5);
+    }
+    #A,#N,#T,#O,#I{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+
+    }
+      /*< LETRA A >*/
+      .perna-r-a{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: perna-r 2s forwards;
+        border-radius: 4px;
+        margin: 0px -30px;
+
+    }
+    .perna-l-a{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        transform: rotate(-0.42turn);
+        margin-right: -50px;
+        animation: perna-l 2s forwards;
+        border-radius: 4px;
+    }
+    .barra{
+        width: 200px;
+        height: 30px;
+        background-color: black;
+        margin-top: 150px;
+        animation: barra 2s forwards;
+        border-radius: 4px;
+    } 
+   /*< LETRA A >*/
+
+      /*< LETRA N >*/
+      .perna-r{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: perna-r 2s forwards;
+        border-radius: 4px;
+        margin: 0px 36px;
+    }
+    .barra-h-l{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: top 2s forwards;
+        margin-left: 100px;
+    }
+    .barra-h-r{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: bot 2s forwards;
+        border-radius: 4px;
+        margin-right: 100px;
+    }
+      /*< LETRA N/>*/
+      /*< LETRA T >*/
+       .barra-h{
+        width: 40px;
+        height: 300px;
+        background-color: black;
+        animation: top 2s forwards;
+        border-radius: 4px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .barra-v{
+        width: 300px;
+        height: 40px;
+        background-color: black;
+        animation: right 2s forwards;
+        border-radius: 4px;
+        margin-left: -220px;
+    }
+          /*< LETRA T >*/
+                /*< LETRA O >*/
+    .circulo1{
+        width: 200px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: solid 30px black;
+        vertical-align: middle;
+        justify-content: center;
+        animation: top 2s;
+    }
+    .circulo2{
+        width: 200px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: solid 30px black;
+        vertical-align: middle;
+        justify-content: center;
+        animation: bot 2s;
+    }
+          /*< LETRA O >*/
+        @keyframes top {
+            0%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes bot  {
+            0%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    @keyframes barra{
+        0%{
+            transform: translatex(-150px);
+        }
+        100%{
+            transform: translatex(0px);
+        }
+    }
+    @keyframes perna-r {
+        0%{
+            transform:  rotate(0.42turn) translateY(150px);
+        }
+        100%{
+            transform:  rotate(0.42turn) translateY(0px);
+        }
+        
+    }
+    @keyframes perna-l {
+        0%{
+            transform:  rotate(-0.42turn) translateY(-150px);
+        }
+        100%{
+            transform:  rotate(-0.42turn) translateY(0px);
+        }
+        
+    }
+    @keyframes top {
+            0%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes right  {
+            0%{
+                transform: translateX(-100px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+        @keyframes perna-r {
+        0%{
+            transform: translatex(100px) rotate(0.42turn) ;
+        }
+        100%{
+            transform: translatex(0px) rotate(0.42turn);
+        }
+    }
+        @keyframes top {
+            0%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes bot  {
+            0%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+</style>
+<body>
+    <div id="A">
+        <div class="perna-l-a"></div>
+        <div class="barra"></div>
+        <div class="perna-r-a"></div>
+    </div>
+    <div id="N">
+        <div class="barra-h-l"></div>
+        <div class="perna-r"></div>
+        <div class="barra-h-r"></div>
+    </div>
+    <div id="T">
+        <div class="barra-h"></div>
+        <div class="barra-v"></div>
+    </div>
+    <div id="O">
+        <div class="circulo1">
+        </div>
+    </div>
+    <div id="N">
+        <div class="barra-h-l"></div>
+        <div class="perna-r"></div>
+        <div class="barra-h-r"></div>
+    </div>
+    <div id="I">
+        <div class="barra-h"></div>
+    </div>
+    <div id="O">
+        <div class="circulo2">
+        </div>
+    </div>
+
+</body>
+</html>

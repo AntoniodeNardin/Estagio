@@ -1,0 +1,23 @@
+:root{
+    --body: #fafafa;
+    --body-color:#555;
+    --link-color:#222;
+    --link-color-hover: #ec5840;
+}
+.dark-mode:root{
+    --body: #212529;
+    --body-color:#899095;
+    --link-color:#dee236;
+    --link-color-hover: #3cc368;
+}
+body{
+    background-color: var(--body);
+    color: var(--body-color);
+    font-family: sans-serif;
+}
+a{
+    color:var(--link-color);
+}
+a:hover{
+    color: var(--link-color-hover);
+}

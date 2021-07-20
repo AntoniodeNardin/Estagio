@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box-l{
+        width: 350px;
+        height: 250px;
+        background-color:#1205d1;
+        animation: aparecer-l 0.75s ease-in-out;
+        margin:30px auto; 
+    }
+    .box-r{
+        width: 350px;
+        height: 250px;
+        background-color:#1205d1;
+        animation: aparecer-r 0.75s ease-in-out;
+        margin:30px auto; 
+
+    }
+    @keyframes aparecer-l{
+        0%{
+            transform: translateX(-450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes aparecer-r{
+        0%{
+            transform: translateX(450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+</style>
+<body>
+    <div class="box-l">ssss</div>
+    <div class="box-r">ssss</div>
+    <div class="box-l">ssss</div>
+    
+    <div class="box-r">ssss</div>
+    
+</body>
+</html>

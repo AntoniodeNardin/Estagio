@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        animation: bordas 2s forwards alternate infinite ease-in-out, cor 1s forwards alternate infinite, size 2s forwards ;
+        margin: 15vw auto;
+        
+    }
+    @keyframes bordas {
+     0%{
+         border-radius: 0px;
+     }
+     100%{
+         border-radius: 50%;
+     }
+    }
+    @keyframes cor {
+     0%{
+         background-color:blue;
+     }
+     100%{
+        background-color:orange;
+     }
+    }
+    @keyframes size {
+     0%{
+         transform: scale(1.0);
+     }
+     100%{
+         transform: scale(1.2);
+     }
+    }
+    @keyframes rotação {
+     0%{
+         transform: rotate(0turn);
+     }
+     100%{
+        transform: rotate(1turn);
+     }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

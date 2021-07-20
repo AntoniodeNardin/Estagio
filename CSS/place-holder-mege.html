@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        transform: scale(0.75);
+        background-color: #1b1919fa;
+    }
+    :root{
+        --cinza1:#eee;
+        --cinza2:#d6d6d6;
+        --cinza3:#c5c5c5;
+        --verde:#01743349;
+    }
+    .card{
+        width: 550px;
+        height: 350px;
+        background-color: var(--cinza1);
+        display: inline-block;
+        border-radius: 30px;
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .card::before{
+        animation: is-passing .6s ease-out infinite;
+          background:linear-gradient(
+              to right,
+              transparent,
+              #fff 50%,
+              transparent
+          );
+          content: '';
+          display: block;
+          height: 100vh;
+          width: 100vh;
+          position: absolute;
+    }
+    .nome{
+        width: 420px;
+        height: 35px;
+        background-color: var(--cinza2);
+        margin: auto;
+        margin: 30px auto;
+    }
+    .avatar{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: var(--cinza3);
+        display: inline-block;
+        margin: 10px 10px 60px 60px;
+    }
+    .descrição{
+        width: 240px;
+        height: 230px;
+        background-color: var(--cinza2);
+        display: inline-block;
+        margin: 10px;
+        margin-top: -10px;
+    }
+    .botão{
+        width: 200px;
+        height: 50px;
+        background-color: var(--verde);
+        margin:auto;
+        margin-top: 70%;
+        border-radius: 15px;
+    }
+section{
+    margin: auto;
+}
+@keyframes is-passing {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes is-pulsing {
+        to{
+            opacity: .35;
+        }
+        
+    }
+</style>
+<body>
+    <section>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="nome"></div>
+            <div class="info">
+                <div class="avatar"></div>
+                <div class="descrição">
+        
+                <div class="botão"></div> </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --cinza1:#eee;
+        --cinza2:#d6d6d6;
+        --cinza3:#c5c5c5;
+    }
+    .placeholder-v{
+        background-color: var(--cinza1);
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+    }
+    .placeholder-v::before{
+        animation: is-passing .6s ease-in-out infinite;
+          background:linear-gradient(
+              to right,
+              transparent,
+              #fff 50%,
+              transparent
+          );
+          content: '';
+          display: block;
+          height: 100vh;
+          width: 100vh;
+          position: absolute;
+    }
+    .placeholder-v-cover{
+        background-color: var(--cinza2);
+        height: 100px;
+        width: 100%;
+        border-radius: 6px 6px 0px 0px;
+    }
+    .placeholder-v-avatar{
+        background-color: var(--cinza3);
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        margin: -45px auto 10px;
+    }
+    .text-placeholder-v{
+        background-color: var(--cinza2);
+        display: inline-block;
+        height: 9px;
+        margin: 5px;
+        width: 50%;
+    }
+    .placeholder-v-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+    .profile-h{
+        display: flex;
+    }
+    .avatar-h{
+        background-color: var(--cinza3);
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        margin: 30px;
+    }
+    .info-h{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+    .content-h{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .placeholder-h{
+        animation: is-pulsing .3s ease-in alternate infinite;
+        background-color: var(--cinza1);
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 250px;
+        margin: 30px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    @keyframes is-passing {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes is-pulsing {
+        to{
+            opacity: .35;
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="placeholder-v">
+    <div class="placeholder-v-cover"></div>
+
+    <div class="placeholder-v-content">
+    <div class="placeholder-v-avatar"></div>
+    <div class="text-placeholder-v" style="width: 60%;"></div>
+    <div class="text-placeholder-v" style="width: 40%;"></div>
+    </div>
+</div>
+<div class="placeholder-h">
+    <div class="profile-h">
+        <div class="avatar-h"></div>
+        
+        <div class="info-h">
+            <div class="text-placeholder-v" style="width: 30%;"></div>
+            <div class="text-placeholder-v" style="width: 60%;"></div>
+
+        </div>
+    </div>
+    <div class="content-h">
+        <div class="text-placeholder-v" style="width: 80%;"></div>
+        <div class="text-placeholder-v" style="width: 50%;"></div>
+        <div class="text-placeholder-v" style="width: 60%;"></div>
+    </div>
+</div>
+</body>
+</html>

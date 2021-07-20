@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 350px;
+        height: 250px;
+        background-color:#057fd1;
+        margin: 25px;
+        border-radius: 10px;
+    }
+    .box-l{
+        animation: aparecer-l .4s ease-in-out;
+    }
+    .box-r{
+        animation: aparecer-r .4s ease-in-out;
+    }
+    .box-t{
+        animation: aparecer-t .4s ease-in-out;
+    }
+    .box-b{
+        animation: aparecer-b .4s ease-in-out;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @keyframes aparecer-l{
+        0%{
+            transform: translateX(-450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes aparecer-r{
+        0%{
+            transform: translateX(450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+    @keyframes aparecer-t{
+        0%{
+            transform: translateY(-450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+    @keyframes aparecer-b{
+        0%{
+            transform: translateY(450px);
+            
+        }
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+</style>
+<body>
+    <div class="box-l box">ssss</div>
+    <div class="box-t box"></div>
+    <div class="box-r box">ssss</div>
+    <div class="box-l box">ssss</div>
+    <div class="box-b box"></div>
+    <div class="box-r box">ssss</div>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+body{
+    margin: 30px 100px;
+    padding: 0;
+    font-family:sans-serif;
+}
+header{
+    display: flex;
+}
+header p{
+    margin-left: 200px;
+}
+h1{
+    font-size: 60px;
+    width: 300px;
+    margin-top: 0px;
+    color: rgb(21, 21, 189);
+}
+h2{
+font-size: 20px;
+}
+h3{
+    font-size: 15px;
+
+}
+.paragrafos1 p{
+    width: 500px;
+}
+section img{
+    transform:rotate(0.125turn);
+    border-radius: 50px;
+    width: 180px;
+    height: 180px;
+    background-color: #c5c5c5;;
+    margin: 20px 0px;
+}
+.paragrafos1{
+    display: flex;
+    margin: 30px 0px;
+}
+.paragrafos1-p{
+    flex-wrap: nowrap
+}
+.imagem{
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 200px;
+}

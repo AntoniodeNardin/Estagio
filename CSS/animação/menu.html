@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 10;
+        padding: 0;
+    }
+.menu-item{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+}
+.menu-text1{
+    width: 200px;
+    height: 50px;
+    margin-top: -50px;
+    background-color: coral;
+
+}
+.menu-text1:hover{
+    margin-top: 0px;
+    height: 100px;
+    background-color: cadetblue;
+}
+.menu-text2{
+    width: 200px;
+    height: 50px;
+    margin-top: -50px;
+    background-color: coral;
+
+}
+.menu-text2:hover{
+    margin-top: 0px;
+    height: 200px;
+    background-color: cadetblue;
+}
+.menu-text3{
+    width: 200px;
+    height: 50px;
+    margin-top: -50px;
+    background-color: coral;
+
+}
+.menu-text3:hover{
+    margin-top: 0px;
+    height: 300px;
+    background-color: cadetblue;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.texto{
+    width: 200px;
+    height: 50px;
+    background-color: coral;
+}
+.texto:hover{
+    height: 300px
+}
+@keyframes show-l {
+        0%{
+            transform: translateX(-300px);
+        }
+        100%{
+            transform: translateX(0px); 
+
+        }
+    }
+</style>
+<body>
+    <div class="item">
+        <div class="menu-item"></div>
+        <div class="menu-text1"></div>
+        <div class="texto"></div>
+    </div>
+    <div class="item">
+        <div class="menu-item"></div>
+        <div class="menu-text2"></div>
+    </div>
+    <div class="item">
+        <div class="menu-item"></div>
+        <div class="menu-text3"></div>
+    </div>
+    <div class="item">
+        <div class="menu-item"></div>
+        <div class="menu-text2"></div>
+    </div>
+    <div class="item">
+        <div class="menu-item"></div>
+        <div class="menu-text1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item{
+        width: 200px;
+        height: 50px;
+        background-color: coral;
+        margin: 10px auto;
+    }
+     .l{
+        animation: to-right 2s;
+    }
+    .r{
+        animation: to-left 2s;
+    }
+    .lista{
+        margin: auto;
+    }
+    .b{
+        height: 375px;
+        width: 50px;
+        animation: to-top 3s forwards;
+        background-color: darkblue;
+    }
+    .t{
+        height: 375px;
+        width: 50px;
+        animation: to-bot 3s forwards;
+        background-color: darkblue;
+
+    }
+    .colunas{
+        display: flex;
+        margin: auto;
+    }
+    @keyframes to-right {
+        0%{
+            transform: translateX(-100px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes to-left {
+        0%{
+            transform: translateX(100px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes to-top {
+        0%{
+            transform: translateY(-2000px) translateX(-200px);
+        }
+        100%{
+            transform: translateY(-375px) translateX(-200px);
+        }
+    }
+    @keyframes to-bot {
+        0%{
+            transform: translateY(1150px) translateX(200px);
+        }
+        100%{
+            transform: translatey(-375px) translateX(200px);
+        
+    }
+    
+</style>
+<body>
+    <div class="lista">
+        <div class="item l"></div>
+        <div class="item r"></div>
+        <div class="item l"></div>
+        <div class="item r"></div>
+        <div class="item l"></div>
+        <div class="item r"></div>
+        <div class="colunas">
+            <div class="item t"></div>
+            <div class="item b"></div>
+        </div>
+    </div>
+</body>
+</html>
