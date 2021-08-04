@@ -127,6 +127,14 @@ div#video > iframe{
     display: block;
     margin: auto;
 }
+aside > ul { 
+    list-style-position: inside;
+    list-style-type: '\2714';
+}
+#aside > ul{
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
 @media only screen and (max-width: 600px) {
     header{
         font-size: 12px;

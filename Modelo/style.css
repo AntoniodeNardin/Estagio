@@ -17,5 +17,6 @@ section{
     background-color: var(--corsection);
     text-align: center;
     margin: auto;
+    padding:20px;
 
 }
