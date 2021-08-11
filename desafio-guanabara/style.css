@@ -118,8 +118,19 @@ aside{
 }
 
 div#video > iframe{
-    max-width: 100%;
-    min-width: 300px;
+    position:absolute;
+    top:5% ;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+#video{
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+
 }
 #droids{
     max-width: 50%;
@@ -134,6 +145,12 @@ aside > ul {
 #aside > ul{
     columns: 2;
     list-style-type: '\2714\00A0\00A0';
+}
+footer{
+    background-color: var(--cor3);
+    font-style: italic;
+    text-align: center;
+    padding:10px;
 }
 @media only screen and (max-width: 600px) {
     header{
